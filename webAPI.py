@@ -35,4 +35,4 @@ def getCredentials(userid):
     except ValidationError as ve:
         abort(400, str(ve))
 
-run(host='localhost', port=8080)
+run(host='ec2-54-69-170-52.us-west-2.compute.amazonaws.com', port=8080)
