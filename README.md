@@ -1,5 +1,6 @@
 # Spaghettio
 ec2-54-69-170-52.us-west-2.compute.amazonaws.com
+54.69.170.52
 
 Objective:
 To create a more robust password manager that introduces authentication beyond text passwords as well as temporary credential sharing.
