@@ -1,25 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qTt-Qf-dxg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Credentials-->
+        <scene sceneID="3A6-eS-GdU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="Auv-RZ-ZJY" customClass="CredentialOverviewTableViewController" customModule="Passing_Your_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ghu-yk-V0t">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CredentialOverviewCell" id="eh5-TQ-wLH">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eh5-TQ-wLH" id="Ucg-s9-nXO">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8we-kF-sG7" kind="show" id="ifT-ia-hsc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Auv-RZ-ZJY" id="gGq-TB-OpN"/>
+                            <outlet property="delegate" destination="Auv-RZ-ZJY" id="qZG-rA-6bD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Credentials" id="0Ks-Sd-ava">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZDh-lV-Uu0">
+                            <connections>
+                                <segue destination="kK6-tX-9vQ" kind="showDetail" id="zTE-91-Nnt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTK-wf-SbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1336" y="245"/>
+        </scene>
+        <!--Add Credential-->
+        <scene sceneID="Wm4-bE-NWe">
+            <objects>
+                <tableViewController id="fWP-kR-dZF" customClass="AddCredentialViewController" customModule="Passing_Your_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="qli-e9-Edb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CredentialItemCell" id="eUW-qe-eiO" customClass="TextFieldTableViewCell" customModule="Passing_Your_Password" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eUW-qe-eiO" id="3Gj-Ci-Stb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMX-Q9-cgd">
+                                            <rect key="frame" x="8" y="7" width="584" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nMX-Q9-cgd" firstAttribute="leading" secondItem="3Gj-Ci-Stb" secondAttribute="leadingMargin" id="CHK-aD-lcW"/>
+                                        <constraint firstItem="nMX-Q9-cgd" firstAttribute="top" secondItem="3Gj-Ci-Stb" secondAttribute="topMargin" constant="-1" id="Gba-Za-oAo"/>
+                                        <constraint firstAttribute="centerX" secondItem="nMX-Q9-cgd" secondAttribute="centerX" id="Ibs-T8-8Sp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nMX-Q9-cgd" secondAttribute="trailing" id="T3Z-D6-Ocb"/>
+                                        <constraint firstAttribute="centerY" secondItem="nMX-Q9-cgd" secondAttribute="centerY" constant="-0.5" id="ddL-M1-iiO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nMX-Q9-cgd" secondAttribute="bottom" constant="-2" id="sru-NV-6AL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="nMX-Q9-cgd" id="0h1-j7-Hi4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fWP-kR-dZF" id="0uz-aA-A7u"/>
+                            <outlet property="delegate" destination="fWP-kR-dZF" id="WDA-mZ-J53"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Credential" id="Zms-Yx-USw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="a2K-te-xsi">
+                            <connections>
+                                <action selector="cancelAdditionOfCredential" destination="fWP-kR-dZF" id="pxM-Li-X38"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bh2-qv-mdu">
+                            <connections>
+                                <action selector="completeAdditionOfCredential" destination="fWP-kR-dZF" id="nnA-LZ-FM0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odn-zG-sq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="-469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MhR-dV-zkA">
+            <objects>
+                <navigationController id="kK6-tX-9vQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iWX-KE-b1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fWP-kR-dZF" kind="relationship" relationship="rootViewController" id="5vi-fl-LeW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBk-dV-ddT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="-469"/>
+        </scene>
+        <!--Credential View Controller-->
+        <scene sceneID="rOe-pW-A6u">
+            <objects>
+                <viewController id="8we-kF-sG7" customClass="CredentialViewController" customModule="Passing_Your_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cxq-vV-ZdL"/>
+                        <viewControllerLayoutGuide type="bottom" id="IB1-QZ-EWL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BxK-00-lh6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-78-XTz">
+                                <rect key="frame" x="16" y="132" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q4-iY-JCx">
+                                <rect key="frame" x="16" y="172" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DpO-78-XTz" firstAttribute="leading" secondItem="BxK-00-lh6" secondAttribute="leadingMargin" id="6PY-P6-GgR"/>
+                            <constraint firstItem="9q4-iY-JCx" firstAttribute="top" secondItem="DpO-78-XTz" secondAttribute="bottom" constant="19" id="7Oa-qS-2c5"/>
+                            <constraint firstItem="DpO-78-XTz" firstAttribute="top" secondItem="Cxq-vV-ZdL" secondAttribute="bottom" constant="68" id="HpN-vx-0JF"/>
+                            <constraint firstItem="9q4-iY-JCx" firstAttribute="trailing" secondItem="BxK-00-lh6" secondAttribute="trailingMargin" id="gU4-9O-tEs"/>
+                            <constraint firstItem="9q4-iY-JCx" firstAttribute="leading" secondItem="BxK-00-lh6" secondAttribute="leadingMargin" id="mhP-iS-v1z"/>
+                            <constraint firstItem="DpO-78-XTz" firstAttribute="trailing" secondItem="BxK-00-lh6" secondAttribute="trailingMargin" id="qht-lR-8z5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="9q4-iY-JCx" id="XKI-aJ-86i"/>
+                        <outlet property="userNameLabel" destination="DpO-78-XTz" id="yAu-w7-ZjT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ih-gl-7Fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="245"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TRQ-FL-i07">
+            <objects>
+                <navigationController id="qTt-Qf-dxg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V2d-HZ-4x0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Auv-RZ-ZJY" kind="relationship" relationship="rootViewController" id="JGk-NO-Kve"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNQ-HE-uzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="245"/>
         </scene>
     </scenes>
 </document>

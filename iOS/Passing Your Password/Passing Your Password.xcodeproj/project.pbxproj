@@ -14,6 +14,11 @@
 		497FB9301AD8C73F008D59A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497FB92F1AD8C73F008D59A7 /* Images.xcassets */; };
 		497FB9331AD8C73F008D59A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */; };
 		497FB93F1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB93E1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift */; };
+		497FB9491AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9481AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift */; };
+		497FB94B1AD8CC13008D59A7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB94A1AD8CC13008D59A7 /* UserData.swift */; };
+		497FB94D1AD8F17A008D59A7 /* CredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */; };
+		497FB94F1AD8F993008D59A7 /* AddCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */; };
+		497FB9511AD90048008D59A7 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		497FB9381AD8C73F008D59A7 /* Passing Your PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passing Your PasswordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497FB93D1AD8C73F008D59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497FB93E1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passing_Your_PasswordTests.swift; sourceTree = "<group>"; };
+		497FB9481AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialOverviewTableViewController.swift; sourceTree = "<group>"; };
+		497FB94A1AD8CC13008D59A7 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialViewController.swift; sourceTree = "<group>"; };
+		497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialViewController.swift; sourceTree = "<group>"; };
+		497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,11 @@
 				497FB9251AD8C73E008D59A7 /* AppDelegate.swift */,
 				497FB92A1AD8C73F008D59A7 /* ViewController.swift */,
 				497FB92C1AD8C73F008D59A7 /* Main.storyboard */,
+				497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */,
+				497FB9481AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift */,
+				497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */,
+				497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */,
+				497FB94A1AD8CC13008D59A7 /* UserData.swift */,
 				497FB92F1AD8C73F008D59A7 /* Images.xcassets */,
 				497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */,
 				497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */,
@@ -216,8 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */,
+				497FB94D1AD8F17A008D59A7 /* CredentialViewController.swift in Sources */,
 				497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */,
+				497FB9511AD90048008D59A7 /* TextFieldTableViewCell.swift in Sources */,
 				497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */,
+				497FB94F1AD8F993008D59A7 /* AddCredentialViewController.swift in Sources */,
+				497FB94B1AD8CC13008D59A7 /* UserData.swift in Sources */,
+				497FB9491AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
