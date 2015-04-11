@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9251AD8C73E008D59A7 /* AppDelegate.swift */; };
+		497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */; };
+		497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB92A1AD8C73F008D59A7 /* ViewController.swift */; };
+		497FB92E1AD8C73F008D59A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497FB92C1AD8C73F008D59A7 /* Main.storyboard */; };
+		497FB9301AD8C73F008D59A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497FB92F1AD8C73F008D59A7 /* Images.xcassets */; };
+		497FB9331AD8C73F008D59A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */; };
+		497FB93F1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB93E1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		497FB9391AD8C73F008D59A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 497FB9181AD8C73E008D59A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497FB91F1AD8C73E008D59A7;
+			remoteInfo = "Passing Your Password";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		497FB9201AD8C73E008D59A7 /* Passing Your Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passing Your Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497FB9241AD8C73E008D59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497FB9251AD8C73E008D59A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		497FB9281AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Passing_Your_Password.xcdatamodel; sourceTree = "<group>"; };
+		497FB92A1AD8C73F008D59A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		497FB92D1AD8C73F008D59A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		497FB92F1AD8C73F008D59A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		497FB9321AD8C73F008D59A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		497FB9381AD8C73F008D59A7 /* Passing Your PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passing Your PasswordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497FB93D1AD8C73F008D59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497FB93E1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passing_Your_PasswordTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		497FB91D1AD8C73E008D59A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497FB9351AD8C73F008D59A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		497FB9171AD8C73E008D59A7 = {
+			isa = PBXGroup;
+			children = (
+				497FB9221AD8C73E008D59A7 /* Passing Your Password */,
+				497FB93B1AD8C73F008D59A7 /* Passing Your PasswordTests */,
+				497FB9211AD8C73E008D59A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		497FB9211AD8C73E008D59A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497FB9201AD8C73E008D59A7 /* Passing Your Password.app */,
+				497FB9381AD8C73F008D59A7 /* Passing Your PasswordTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497FB9221AD8C73E008D59A7 /* Passing Your Password */ = {
+			isa = PBXGroup;
+			children = (
+				497FB9251AD8C73E008D59A7 /* AppDelegate.swift */,
+				497FB92A1AD8C73F008D59A7 /* ViewController.swift */,
+				497FB92C1AD8C73F008D59A7 /* Main.storyboard */,
+				497FB92F1AD8C73F008D59A7 /* Images.xcassets */,
+				497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */,
+				497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */,
+				497FB9231AD8C73E008D59A7 /* Supporting Files */,
+			);
+			path = "Passing Your Password";
+			sourceTree = "<group>";
+		};
+		497FB9231AD8C73E008D59A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				497FB9241AD8C73E008D59A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		497FB93B1AD8C73F008D59A7 /* Passing Your PasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				497FB93E1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift */,
+				497FB93C1AD8C73F008D59A7 /* Supporting Files */,
+			);
+			path = "Passing Your PasswordTests";
+			sourceTree = "<group>";
+		};
+		497FB93C1AD8C73F008D59A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				497FB93D1AD8C73F008D59A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		497FB91F1AD8C73E008D59A7 /* Passing Your Password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497FB9421AD8C73F008D59A7 /* Build configuration list for PBXNativeTarget "Passing Your Password" */;
+			buildPhases = (
+				497FB91C1AD8C73E008D59A7 /* Sources */,
+				497FB91D1AD8C73E008D59A7 /* Frameworks */,
+				497FB91E1AD8C73E008D59A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Passing Your Password";
+			productName = "Passing Your Password";
+			productReference = 497FB9201AD8C73E008D59A7 /* Passing Your Password.app */;
+			productType = "com.apple.product-type.application";
+		};
+		497FB9371AD8C73F008D59A7 /* Passing Your PasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497FB9451AD8C73F008D59A7 /* Build configuration list for PBXNativeTarget "Passing Your PasswordTests" */;
+			buildPhases = (
+				497FB9341AD8C73F008D59A7 /* Sources */,
+				497FB9351AD8C73F008D59A7 /* Frameworks */,
+				497FB9361AD8C73F008D59A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				497FB93A1AD8C73F008D59A7 /* PBXTargetDependency */,
+			);
+			name = "Passing Your PasswordTests";
+			productName = "Passing Your PasswordTests";
+			productReference = 497FB9381AD8C73F008D59A7 /* Passing Your PasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		497FB9181AD8C73E008D59A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Spaghettio;
+				TargetAttributes = {
+					497FB91F1AD8C73E008D59A7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					497FB9371AD8C73F008D59A7 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 497FB91F1AD8C73E008D59A7;
+					};
+				};
+			};
+			buildConfigurationList = 497FB91B1AD8C73E008D59A7 /* Build configuration list for PBXProject "Passing Your Password" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 497FB9171AD8C73E008D59A7;
+			productRefGroup = 497FB9211AD8C73E008D59A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497FB91F1AD8C73E008D59A7 /* Passing Your Password */,
+				497FB9371AD8C73F008D59A7 /* Passing Your PasswordTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		497FB91E1AD8C73E008D59A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497FB92E1AD8C73F008D59A7 /* Main.storyboard in Resources */,
+				497FB9331AD8C73F008D59A7 /* LaunchScreen.xib in Resources */,
+				497FB9301AD8C73F008D59A7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497FB9361AD8C73F008D59A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		497FB91C1AD8C73E008D59A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */,
+				497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */,
+				497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497FB9341AD8C73F008D59A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497FB93F1AD8C73F008D59A7 /* Passing_Your_PasswordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		497FB93A1AD8C73F008D59A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497FB91F1AD8C73E008D59A7 /* Passing Your Password */;
+			targetProxy = 497FB9391AD8C73F008D59A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		497FB92C1AD8C73F008D59A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497FB92D1AD8C73F008D59A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497FB9321AD8C73F008D59A7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		497FB9401AD8C73F008D59A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		497FB9411AD8C73F008D59A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497FB9431AD8C73F008D59A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Passing Your Password/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		497FB9441AD8C73F008D59A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Passing Your Password/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		497FB9461AD8C73F008D59A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Passing Your PasswordTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passing Your Password.app/Passing Your Password";
+			};
+			name = Debug;
+		};
+		497FB9471AD8C73F008D59A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Passing Your PasswordTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Passing Your Password.app/Passing Your Password";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		497FB91B1AD8C73E008D59A7 /* Build configuration list for PBXProject "Passing Your Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497FB9401AD8C73F008D59A7 /* Debug */,
+				497FB9411AD8C73F008D59A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497FB9421AD8C73F008D59A7 /* Build configuration list for PBXNativeTarget "Passing Your Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497FB9431AD8C73F008D59A7 /* Debug */,
+				497FB9441AD8C73F008D59A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		497FB9451AD8C73F008D59A7 /* Build configuration list for PBXNativeTarget "Passing Your PasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497FB9461AD8C73F008D59A7 /* Debug */,
+				497FB9471AD8C73F008D59A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				497FB9281AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodel */,
+			);
+			currentVersion = 497FB9281AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodel */;
+			path = Passing_Your_Password.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 497FB9181AD8C73E008D59A7 /* Project object */;
+}
