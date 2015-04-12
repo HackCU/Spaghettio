@@ -20,7 +20,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="8we-kF-sG7" kind="show" identifier="CredentailSegue" id="1G1-ZM-J2N"/>
+                                    <segue destination="Gl6-Ew-tpy" kind="show" id="ego-Np-S9H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -156,6 +156,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ih-gl-7Fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3228" y="245"/>
+        </scene>
+        <!--Credential Table View Controller-->
+        <scene sceneID="Mvc-5m-UfL">
+            <objects>
+                <tableViewController id="Gl6-Ew-tpy" customClass="CredentialTableViewController" customModule="Passing_Your_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="uqC-TK-jQA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CCell" id="63a-U8-N0a">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="63a-U8-N0a" id="gZv-bG-ANJ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gl6-Ew-tpy" id="2zD-in-Omg"/>
+                            <outlet property="delegate" destination="Gl6-Ew-tpy" id="vpd-Pn-lIE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrp-5M-DEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3228" y="903"/>
         </scene>
         <!--Cam View Controller-->
         <scene sceneID="vAX-7V-rBq">

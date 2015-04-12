@@ -26,6 +26,8 @@ class AuthenticationTableViewController: UITableViewController {
 		hasTouchID = localAuthenticationContext.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error)
 		authenticationTypes = (hasTouchID) ? ["Touch ID","Facial Recognition","Password"] : ["Facial Recognition","Password"]
     }
+	
+	
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

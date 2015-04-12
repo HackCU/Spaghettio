@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4966BD841ADA12BB00ABDFAB /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4966BD831ADA12BB00ABDFAB /* Test.swift */; };
+		4966BD861ADA8B4D00ABDFAB /* CredentialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4966BD851ADA8B4D00ABDFAB /* CredentialTableViewController.swift */; };
 		497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9251AD8C73E008D59A7 /* AppDelegate.swift */; };
 		497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */; };
 		497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB92A1AD8C73F008D59A7 /* ViewController.swift */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4966BD831ADA12BB00ABDFAB /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4966BD851ADA8B4D00ABDFAB /* CredentialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialTableViewController.swift; sourceTree = "<group>"; };
 		497FB9201AD8C73E008D59A7 /* Passing Your Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passing Your Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497FB9241AD8C73E008D59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497FB9251AD8C73E008D59A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +113,7 @@
 				497FB92C1AD8C73F008D59A7 /* Main.storyboard */,
 				497FB9541AD9AF33008D59A7 /* FacialViewController.swift */,
 				497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */,
+				4966BD851ADA8B4D00ABDFAB /* CredentialTableViewController.swift */,
 				497FB9481AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift */,
 				497FB9521AD972B3008D59A7 /* AuthenticationTableViewController.swift */,
 				497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */,
@@ -121,7 +122,6 @@
 				497FB95F1ADA0C9A008D59A7 /* Credential.swift */,
 				497FB9591AD9D1F5008D59A7 /* AVCamViewController.h */,
 				497FB95A1AD9D1F5008D59A7 /* AVCamViewController.m */,
-				4966BD831ADA12BB00ABDFAB /* Test.swift */,
 				497FB95B1AD9D1F5008D59A7 /* AVCamPreviewView.h */,
 				497FB95C1AD9D1F6008D59A7 /* AVCamPreviewView.m */,
 				497FB92F1AD8C73F008D59A7 /* Images.xcassets */,
@@ -260,8 +260,8 @@
 			files = (
 				497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */,
 				497FB94D1AD8F17A008D59A7 /* CredentialViewController.swift in Sources */,
+				4966BD861ADA8B4D00ABDFAB /* CredentialTableViewController.swift in Sources */,
 				497FB9601ADA0C9A008D59A7 /* Credential.swift in Sources */,
-				4966BD841ADA12BB00ABDFAB /* Test.swift in Sources */,
 				497FB95E1AD9D1F6008D59A7 /* AVCamPreviewView.m in Sources */,
 				497FB9551AD9AF33008D59A7 /* FacialViewController.swift in Sources */,
 				497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */,

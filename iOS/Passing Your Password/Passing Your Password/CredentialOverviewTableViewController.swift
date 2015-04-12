@@ -91,7 +91,7 @@ class CredentialOverviewTableViewController: UITableViewController {
 		if let sender = sender as? UITableViewCell {
 			let indexPath = tableView.indexPathForCell(sender)!
 			let credential = userData.credentials[indexPath.row]
-			let destinationViewController = segue.destinationViewController as! CredentialViewController
+			let destinationViewController = segue.destinationViewController as! CredentialTableViewController
 			destinationViewController.credential = credential
 		}
 		
