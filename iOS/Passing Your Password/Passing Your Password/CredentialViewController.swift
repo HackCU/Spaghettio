@@ -15,11 +15,13 @@ class CredentialViewController: UIViewController {
 			navigationItem.title = credential.url
 			userNameLabel?.text = credential.userName
 			passwordLabel?.text = credential.password
+			temporaryLabel?.text = (credential.temporary) ? "Temporary" : ""
 		}
 	}
 	
 	@IBOutlet private var userNameLabel:UILabel?
 	@IBOutlet private var passwordLabel:UILabel?
+	@IBOutlet private var temporaryLabel:UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()

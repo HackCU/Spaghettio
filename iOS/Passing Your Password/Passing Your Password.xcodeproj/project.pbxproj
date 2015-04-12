@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4966BD841ADA12BB00ABDFAB /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4966BD831ADA12BB00ABDFAB /* Test.swift */; };
 		497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9251AD8C73E008D59A7 /* AppDelegate.swift */; };
 		497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */; };
 		497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB92A1AD8C73F008D59A7 /* ViewController.swift */; };
@@ -19,6 +20,12 @@
 		497FB94D1AD8F17A008D59A7 /* CredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */; };
 		497FB94F1AD8F993008D59A7 /* AddCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */; };
 		497FB9511AD90048008D59A7 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */; };
+		497FB9531AD972B3008D59A7 /* AuthenticationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9521AD972B3008D59A7 /* AuthenticationTableViewController.swift */; };
+		497FB9551AD9AF33008D59A7 /* FacialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB9541AD9AF33008D59A7 /* FacialViewController.swift */; };
+		497FB9571AD9BADD008D59A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497FB9561AD9BADD008D59A7 /* AVFoundation.framework */; };
+		497FB95D1AD9D1F6008D59A7 /* AVCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497FB95A1AD9D1F5008D59A7 /* AVCamViewController.m */; };
+		497FB95E1AD9D1F6008D59A7 /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497FB95C1AD9D1F6008D59A7 /* AVCamPreviewView.m */; };
+		497FB9601ADA0C9A008D59A7 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FB95F1ADA0C9A008D59A7 /* Credential.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4966BD831ADA12BB00ABDFAB /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		497FB9201AD8C73E008D59A7 /* Passing Your Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passing Your Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497FB9241AD8C73E008D59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497FB9251AD8C73E008D59A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,15 @@
 		497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialViewController.swift; sourceTree = "<group>"; };
 		497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialViewController.swift; sourceTree = "<group>"; };
 		497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		497FB9521AD972B3008D59A7 /* AuthenticationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationTableViewController.swift; sourceTree = "<group>"; };
+		497FB9541AD9AF33008D59A7 /* FacialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialViewController.swift; sourceTree = "<group>"; };
+		497FB9561AD9BADD008D59A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		497FB9581AD9D1F5008D59A7 /* Passing Your Password-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Passing Your Password-Bridging-Header.h"; sourceTree = "<group>"; };
+		497FB9591AD9D1F5008D59A7 /* AVCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamViewController.h; sourceTree = "<group>"; };
+		497FB95A1AD9D1F5008D59A7 /* AVCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamViewController.m; sourceTree = "<group>"; };
+		497FB95B1AD9D1F5008D59A7 /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		497FB95C1AD9D1F6008D59A7 /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
+		497FB95F1ADA0C9A008D59A7 /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497FB9571AD9BADD008D59A7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +89,7 @@
 		497FB9171AD8C73E008D59A7 = {
 			isa = PBXGroup;
 			children = (
+				497FB9561AD9BADD008D59A7 /* AVFoundation.framework */,
 				497FB9221AD8C73E008D59A7 /* Passing Your Password */,
 				497FB93B1AD8C73F008D59A7 /* Passing Your PasswordTests */,
 				497FB9211AD8C73E008D59A7 /* Products */,
@@ -92,15 +111,24 @@
 				497FB9251AD8C73E008D59A7 /* AppDelegate.swift */,
 				497FB92A1AD8C73F008D59A7 /* ViewController.swift */,
 				497FB92C1AD8C73F008D59A7 /* Main.storyboard */,
+				497FB9541AD9AF33008D59A7 /* FacialViewController.swift */,
 				497FB9501AD90048008D59A7 /* TextFieldTableViewCell.swift */,
 				497FB9481AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift */,
+				497FB9521AD972B3008D59A7 /* AuthenticationTableViewController.swift */,
 				497FB94C1AD8F17A008D59A7 /* CredentialViewController.swift */,
 				497FB94E1AD8F993008D59A7 /* AddCredentialViewController.swift */,
 				497FB94A1AD8CC13008D59A7 /* UserData.swift */,
+				497FB95F1ADA0C9A008D59A7 /* Credential.swift */,
+				497FB9591AD9D1F5008D59A7 /* AVCamViewController.h */,
+				497FB95A1AD9D1F5008D59A7 /* AVCamViewController.m */,
+				4966BD831ADA12BB00ABDFAB /* Test.swift */,
+				497FB95B1AD9D1F5008D59A7 /* AVCamPreviewView.h */,
+				497FB95C1AD9D1F6008D59A7 /* AVCamPreviewView.m */,
 				497FB92F1AD8C73F008D59A7 /* Images.xcassets */,
 				497FB9311AD8C73F008D59A7 /* LaunchScreen.xib */,
 				497FB9271AD8C73E008D59A7 /* Passing_Your_Password.xcdatamodeld */,
 				497FB9231AD8C73E008D59A7 /* Supporting Files */,
+				497FB9581AD9D1F5008D59A7 /* Passing Your Password-Bridging-Header.h */,
 			);
 			path = "Passing Your Password";
 			sourceTree = "<group>";
@@ -232,11 +260,17 @@
 			files = (
 				497FB92B1AD8C73F008D59A7 /* ViewController.swift in Sources */,
 				497FB94D1AD8F17A008D59A7 /* CredentialViewController.swift in Sources */,
+				497FB9601ADA0C9A008D59A7 /* Credential.swift in Sources */,
+				4966BD841ADA12BB00ABDFAB /* Test.swift in Sources */,
+				497FB95E1AD9D1F6008D59A7 /* AVCamPreviewView.m in Sources */,
+				497FB9551AD9AF33008D59A7 /* FacialViewController.swift in Sources */,
 				497FB9261AD8C73E008D59A7 /* AppDelegate.swift in Sources */,
 				497FB9511AD90048008D59A7 /* TextFieldTableViewCell.swift in Sources */,
 				497FB9291AD8C73F008D59A7 /* Passing_Your_Password.xcdatamodeld in Sources */,
 				497FB94F1AD8F993008D59A7 /* AddCredentialViewController.swift in Sources */,
+				497FB95D1AD9D1F6008D59A7 /* AVCamViewController.m in Sources */,
 				497FB94B1AD8CC13008D59A7 /* UserData.swift in Sources */,
+				497FB9531AD972B3008D59A7 /* AuthenticationTableViewController.swift in Sources */,
 				497FB9491AD8CB41008D59A7 /* CredentialOverviewTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +333,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -344,6 +379,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -366,9 +402,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Passing Your Password/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Passing Your Password/Passing Your Password-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -376,9 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Passing Your Password/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Passing Your Password/Passing Your Password-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -435,6 +480,7 @@
 				497FB9441AD8C73F008D59A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		497FB9451AD8C73F008D59A7 /* Build configuration list for PBXNativeTarget "Passing Your PasswordTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +489,7 @@
 				497FB9471AD8C73F008D59A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

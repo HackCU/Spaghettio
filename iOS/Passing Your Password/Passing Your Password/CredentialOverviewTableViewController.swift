@@ -10,7 +10,7 @@ import UIKit
 
 class CredentialOverviewTableViewController: UITableViewController {
 	
-	var userData = UserData.defaultUserData
+	var userData = UserData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,44 @@ class CredentialOverviewTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-		userData.add(credential: Credential(url: "netflix.com", userName: "Andrew", password: "1234"))
-		userData.add(credential: Credential(url: "facebook.com", userName: "Swisher", password: "password"))
+//		userData.add(credential: Credential(url: "netflix.com", userName: "Andrew", password: "1234"))
+//		userData.add(credential: Credential(url: "facebook.com", userName: "Swisher", password: "password"))
     }
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+//		UserData.defaultUserData = UserData()
+//		var userData = UserData.defaultUserData
+		
+//		NSMutableURLRequest * request = [[NSMutableURLRequest alloc] init];
+//		request.HTTPMethod = @"POST";
+//		request.URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://ec2-54-69-170-52.us-west-2.compute.amazonaws.com:8080/%@/dickpic",@"noah"]];
+//		var request = NSMutableURLRequest()
+//		request.HTTPMethod = "GET"
+//		request.URL = NSURL(string: "http://ec2-54-69-170-52.us-west-2.compute.amazonaws.com:8080/noah/credentials")
+//		NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {println("hello \($0.0)")}
+		
+		userData.removeAll()
+		
+		let request = NSURLRequest(URL: NSURL(string: "http://ec2-54-69-170-52.us-west-2.compute.amazonaws.com:8080/noah/credentials")!)
+		var error:NSError?
+		let jsonData = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: &error)!
+		let json = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as! NSDictionary
+		
+		for value in (json["all"] as! [AnyObject]) {
+			if let value = value as? [String:[String:String]] {
+				println(value)
+				for (k,v) in value {
+					if k != "_id" {
+						let cred = Credential(url: k, userName: v["user"]!, password: v["password"]!, temporary: false)
+						userData.add(credential: cred)
+					}
+				}
+			}
+			
+		}
+		
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -59,6 +94,7 @@ class CredentialOverviewTableViewController: UITableViewController {
 			let destinationViewController = segue.destinationViewController as! CredentialViewController
 			destinationViewController.credential = credential
 		}
+		
 	}
 
 }

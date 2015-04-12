@@ -8,8 +8,8 @@
 
 import UIKit
 
-class UserData: NSObject {
-	var userID:NSObject?
+@objc public class UserData: NSObject {
+	var userID:NSString?
 	var credentials:[Credential] = []
 	static var defaultUserData = UserData()
 	
@@ -21,17 +21,8 @@ class UserData: NSObject {
 		credentials = credentials.filter({c != $0})
 	}
 	
-}
-
-class Credential: NSObject {
-	var url:String
-	var userName:String
-	var password:String
-	
-	init(url:String,userName:String, password:String) {
-		self.url = url
-		self.userName = userName
-		self.password = password
-		super.init()
+	func removeAll() {
+		credentials = []
 	}
+	
 }
