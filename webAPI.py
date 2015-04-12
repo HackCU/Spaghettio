@@ -51,14 +51,14 @@ def getCredentials(userid):
     name_id = request.query.name
     if not name_id:
         entity = db[userid].find()
-        name_id = "all"
+        name_id = 'all'
     else:
         entity = db[userid].distinct(name_id)
     entity = dumps(entity)
     thing = json.loads(entity)
     stuff ={}
     stuff[name_id]=thing
-    return str(stuff)
+    return stuff
 
 @route('/<userid>/credentials', method='POST')
 def getCredentials(userid):
