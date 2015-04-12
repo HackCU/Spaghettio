@@ -135,9 +135,9 @@ print_result('wait async', rst)
 rst = api.recognition.identify(group_name = 'test', url = TARGET_IMAGE)
 print_result('recognition result', rst)
 print '=' * 60
-print 'The person with highest confidence:', \
-        rst['face'][0]['candidate'][0]['person_name']
+#print 'The person with highest confidence:', \
+#        rst['face'][0]['candidate'][0]['person_name']
 
 #api.group.delete(group_name = 'test')
-api.person.delete(person_name = FACES.iterkeys())
+#api.person.delete(person_name = FACES.iterkeys())
 
